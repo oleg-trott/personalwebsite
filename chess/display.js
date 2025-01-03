@@ -23,7 +23,7 @@ var P4WN_WHITE_SQUARE = 'p4wn-white-square';
 
 var P4WN_ROTATE_BOARD = true;
 var P4WN_LEVELS = ['1', '2', '3', '4', '5'];
-var P4WN_DEFAULT_LEVEL = 1;
+var P4WN_DEFAULT_LEVEL = 0;
 var P4WN_ADAPTIVE_LEVELS = false;
 
 var P4WN_IMAGE_DIR = 'images';
