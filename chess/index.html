@@ -1,23 +1,65 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8" />
-<link rel="stylesheet" href="p4wn.css" />
+    <meta charset="utf-8">
+    <title>Шахматы</title>
+    <link href="./css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
+    <div id="Board">
+    </div>
+    <div id="EngineOutput">
+		<u>Инструкции:</u>
+		<p>Кликайте на фигуру один раз, а потом туда, куда хотите пойти, еще один раз.
+		<hr>
+		<p>Для рокировки, двигайте короля на 2 шага влево или вправо.
+		<hr>
+		<p>Две кнопки ниже означают "Новую игру" и "Назад!", соответсвенно.
+		<hr>
+		<p>Размер доски можете увеличить или уменьшить сами, как с любой другой страничкой.
+		<hr>
+		<p>Если будет слишком легко выигрывать - дайте знать
+		<hr>
+		<hr>
+		<hr>
+		<u>Идеи:</u>
+		<p>Ферзь стоит 9 пешек, ладья - 5, слон - 3, конь - 3.
+		<hr>
+		<p>Активные фигуры ценнее неактивных
+		<hr>
+		<p>Захват центра помогает развитию своих фигур
+		<hr>
+		<p>Сдвоенные или одинокие пешки менее ценны
+		<hr>
+		<br>
+		<br>
+        <div class="Btns">
 
-<!-- Put anything you like here... -->
-
-<div id="board-goes-here"></div>
-
-<!-- ...and here -->
-
-<script src="engine.js"></script>
-<script src="display.js"></script>
-<script>
-var game = p4wnify("board-goes-here");
-game.next_move();
-</script>
-<!-- Uncomment if you like to optimize to screen resolution -->
-<script src="resolutionawareness.js"></script>
+            <button id="NewGameButton">
+                <i class="fa fa-refresh" aria-hidden="true" title="Новую Игру"></i>
+            </button>
+            <button id="TakeButton">
+                <i class="fa fa-undo" aria-hidden="true" title="Назад"></i>
+            </button>
+        </div>
+        <span id="GameStatus">Game Status</span>
+        <!-- <span id="Timer">Game Status</span> -->
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/defs.js"></script>
+    <script src="js/io.js"></script>
+    <script src="js/board.js"></script>
+    <script src="js/movegen.js"></script>
+    <script src="js/makemove.js"></script>
+    <script src="js/evaluate.js"></script>
+    <script src="js/pvtable.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/perft.js"></script>
+    <script src="js/gui.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
