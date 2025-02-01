@@ -18,7 +18,7 @@ body {
 }
 
 #EngineOutput {
-  width: 300px;
+  width: 400px;
   background-color: #ffffff;
   position: absolute;
   left: 800px;
@@ -196,3 +196,4 @@ footer{
   color: #dbd9d7;
   background-color: #42403d;
 }
+
