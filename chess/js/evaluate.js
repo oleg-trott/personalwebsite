@@ -272,6 +272,8 @@ function EvalPosition() {
   let score =
     GameBoard.material[COLOURS.WHITE] - GameBoard.material[COLOURS.BLACK];
 
+  score += Math.floor(Math.random() * 30); // add some randomness, comparable to BishopPair
+
   let pce;
   let sq;
   let pceNum;
