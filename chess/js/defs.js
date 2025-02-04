@@ -69,7 +69,7 @@ let BOOL = { FALSE: 0, TRUE: 1 };
 
 let MAXGAMEMOVES = 2048;
 let MAXPOSITIONMOVES = 256;
-let MAXDEPTH = 2; // 64;
+let MAXDEPTH = 2; // 4; // 64;
 let INFINITE = 30000;
 let MATE = 29000;
 let PVENTRIES = 10000;
